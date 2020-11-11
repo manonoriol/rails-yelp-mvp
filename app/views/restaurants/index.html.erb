@@ -1,0 +1,12 @@
+<div class="title text-center border bg-secondary text-white">
+  <h1>restaurants list</h1>
+</div>
+
+<div class="main-list text-center m-2">
+  <ul class="list-group">
+    <% @restaurants.each do |restaurant| %>
+      <li class="list-group-item list-group-item-action"> <%= link_to(restaurant.name, restaurant_path(restaurant)) %> </li>
+    <% end %>
+  </ul>
+</div>
+
